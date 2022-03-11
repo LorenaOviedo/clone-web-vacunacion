@@ -5,3 +5,6 @@ Clonación de página sobre campaña de vacunación contra COVID19 con el objeti
 
 ## Resultado
 ![landing-page.jpeg](https://github.com/LorenaOviedo/maquetado-pagina-vacunacion/blob/main/images/resultado-clonacion.jpeg)
+
+Creado por Lorena Oviedo
+* Github: [@LorenaOviedo](https://github.com/LorenaOviedo)
