@@ -1,4 +1,4 @@
-# maquetado-pagina-vacunacion
+# Clonando una web
 Clonación de página sobre campaña de vacunación COVID19 con el objetivo de implementar estilos CSS.
 
 [Ver aquí](http://campana-vacunacion.atwebpages.com/) 
