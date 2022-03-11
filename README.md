@@ -1,5 +1,5 @@
 # maquetado-pagina-vacunacion
-Clonación de página sobre campaña de vacunación contra COVID19 con el objetivo de implementar estilos CSS.
+Clonación de página sobre campaña de vacunación COVID19 con el objetivo de implementar estilos CSS.
 
 [Ver aquí](http://campana-vacunacion.atwebpages.com/) 
 
