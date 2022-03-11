@@ -1,0 +1,757 @@
+/*Estilos para landing page*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Tamaño del encabezado*/
+header{
+    width: 100%;
+    height: 100px;
+    top: 0;
+	position: fixed; /*Propiedad para hacer el header fijo*/
+    z-index: 100; /*Propiedad para que esté por encima de todo el contenido*/
+    background-color:white; filter:alpha(opacity=60); opacity: .95;
+}
+
+/*Relleno superior igual a la altura de la cabecera*/
+body{
+    padding-top: 100px;
+}
+
+
+/*Tamaño para contenedor del loco*/
+#logo{
+    width: 30%;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+
+/*Estilos para el logo*/
+#logo h1{
+    font-family: tommy;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #2b4bc9;
+}
+
+/*Tamaño para el contenedor del menú*/
+#banner{
+    width: 50%;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+}
+
+/*Estilos para menú*/
+div ul li{
+    display:inline;
+}
+
+#banner ul li{
+    font-family: opensans;
+    font-weight: bold;
+    font-size: 15px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 35px;
+    color: #7a879d;
+}
+
+/*Tamaño para el contenedor del botón del menú*/
+#informate{
+    width: 20%;
+    height: 100px;
+    float: left;
+}
+
+/*Estilos para el botón*/
+#informate button{
+    width: 55%;
+    height: 40px;
+    font-family: opensans;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: white;
+    background-color:#2b4bc9;
+    border-radius: 5%;
+    border: #2b4bc9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*Importan fuentes*/
+@font-face{
+    font-family: opensans;
+    src: url(/fonts/OpenSans.ttf);
+}
+
+@font-face{
+    font-family: tommy;
+    src: url(/fonts/Tommy.otf);
+}
+
+/*Estilos para el mensaje de presentación */
+#presentacion{
+    float: left;
+}
+
+#presentacion h1{
+    font-family: tommy;
+    font-size: 60px;
+    color: #1f3e72;
+}
+
+h2{
+    font-family: OpenSans;
+    font-size: 15px;
+    color: #7a879d;
+    margin-left: 135px;
+    line-height: 30px;
+    margin-top: 2%;
+}
+
+#presentacion h1{
+    margin-top: 20%;
+    margin-left: 130px;
+}
+
+/*Arreglo del aside*/
+#foto-presentacion{
+    float: right;
+}
+
+/*Tamaños y pocisiones para viñetas*/
+#caracteristicas{
+    width: 320px;
+    margin-left: 135px;
+    margin-top: 45px;
+}
+
+/*Estilos para viñetas*/
+#caracteristicas{
+    display: flex;
+    color: #1f3e72;
+    font-family: tommy;
+    font-weight: bold;
+    font-size: 13px;
+    align-items: center;
+}
+
+.shield{
+    flex:1 1 1;
+}
+
+.viñeta1{
+    flex: 1 1 auto;
+    padding-left: 5px;
+}
+
+.star{
+    flex: 1 1 1;
+}
+
+.viñeta2{
+    flex: 1 1 auto;
+    padding-left: 5px;
+}
+
+/*Tamaño contenedor de "Agenda tu cita"*/
+#caracteristicas2{
+    width: 320px;
+    margin-left: 135px;
+    margin-top: 140px;
+}
+
+/*Estilos para el texto "Agenda tu cita"*/
+#caracteristicas2{
+    display: flex;
+    color: #1f3e72;
+    font-family: tommy;
+    font-weight: bold;
+    font-size: 19px;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+/*Tamaño contenedor para seleccionar fecha, lugar y vacuna*/
+.fechas{
+    width: 65%;
+    height: 120px;
+    margin-top: 50px;
+    /*backdrop-filter: blur(25px); Efecto blur*/ 
+    background-color:white; filter:alpha(opacity=60); opacity: .95;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    margin-left: 135px;
+    position: absolute;
+    z-index: 20;
+    float: none;
+}
+
+/*Tamaño del contenedor para titulos e iconos locación, fecha y vacuna.*/
+#agenda{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    font-family: tommy;
+    float: right;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+/*Pocisiones*/
+.locacion{
+    flex: 0;
+}
+
+.agenda-locacion{
+    flex: auto;
+    padding-left: 5px;
+}
+
+.fecha{
+    flex: 0;
+}
+
+.agenda-fecha{
+    flex: auto;
+    padding-left: 5px;
+}
+
+.vacuna{
+    flex: 0;
+}
+
+.agenda-vacuna{
+    flex: auto;
+    padding-left: 5px;
+}
+
+/*Tamaño del contenedor del botón de la agenda*/
+#button-aceptar{
+    width: 20%;
+    height: 120px;
+    float: right;
+    box-sizing: border-box;
+}
+
+/*Estilos para botón*/
+#button-aceptar button{
+    width: 80%;
+    height: 50px;
+    font-family: opensans;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 8%;
+    color: white;
+    background-color: #2b4bc9;
+    border-radius: 5%;
+    border: #f1f5ff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#button-aceptar button:hover{
+    color:#2b4bc9;
+    background-color:#f1f5ff;
+    cursor: pointer;
+}
+
+/*Contenedor y arreglo para el lugar, fecha y vacuna seleccionados*/
+.selecciones{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    float: right;
+    box-sizing: border-box;
+    font-family: tommy;
+    color:#1f3e72;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+/*Estilos para seleccionador de localización*/
+.seleccion-locacion{
+    flex: 1;
+    text-align: center;
+}
+
+/*Estilo para seleccionador de fecha*/
+.seleccion-fecha{
+    flex: 1;
+    text-align: center;
+    padding-left: 35px;
+}
+
+/*Estilos para seleccionador de vacuna*/
+.seleccion-vacuna{
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+}
+
+/*Contenedor de imagen con todas las vacunas*/
+.grupo-vacunas{
+    width: 100%;
+    text-align: center;
+}
+
+/*Contenedor de sección 2*/
+.informacion-seccion2{
+    width:100%;
+}
+
+/*Estilos para titulo de sección 2*/
+.informacion-seccion2 h1{
+    font-family: tommy;
+    font-size: 40px;
+    color: #1f3e72;
+    margin-top: 4%;
+    margin-left: 130px;
+}
+
+/*Texto de sección 2*/
+.informacion-seccion2 h2{
+    margin-top: 2%;
+}
+
+/*Contenedor de tarjetas de beneficios*/
+.beneficios{
+    width: 80%;
+    display: inline-flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+/*Contenedores hijos para cada tarjeta individual de beneficios*/
+.beneficios-hijo{
+    width: 23%;
+    height: 250px;
+    border-radius: 5%;
+}
+
+/*Efecto de selección de tarjetas*/
+.beneficios-hijo:hover{
+    box-shadow: 0 8px 16px 0 rgba(238, 243, 252, 1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*Estilos para iconos de tarjetas*/
+.beneficios-icono{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+/*Estilos para titulos de tarjetas*/
+.beneficios-titulo{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family:'Segoe UI';
+    font-weight: bolder;
+    font-size: 20px;
+    color:#1f3e72;
+    line-height: 22px;
+}
+
+/*Estilos para texto de tarjetas*/
+.beneficios-texto{
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 13px;
+    font-family:tommy;
+    color: #7a879d;
+    line-height: 20px;
+}
+
+/*Contenedor de sección 3*/
+.informacion-seccion3{
+    width: 100%;
+    height: 150px;
+}
+
+/*Titulo de sección 3*/
+.informacion-seccion3 h1{
+    font-family: tommy;
+    font-size: 40px;
+    color: #1f3e72;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+/*Texto de sección 3*/
+.informacion-seccion3 h2{
+    margin-left: 50%;
+    margin-right: 10%;
+}
+
+/*Tamaño de fondo*/
+.foto-seccion3{
+    float: left;
+    height: 480px;
+    width: 43%;
+    margin-top: 100px;
+    background: linear-gradient(to right, #0c94e5, #2d6cdd);
+}
+
+/*Posición de foto sección 3*/
+.foto-seccion3 img{
+    margin-top: -170px;
+}
+
+/*Contenedor de acordeones*/
+.consideraciones{
+    width: 50%;
+    float: right;
+    padding-left: 7%;
+    padding-top: 6%;
+}
+
+/*Contenedor individual para cada tarjeta con acordeón*/
+.acordeon{
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(238, 243, 252, 1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*Espacio entre acordeones*/
+.tarjetas-consideraciones{
+    margin-top: 3%;
+}
+
+/*Posición titulo y contenido*/
+.acordeon-label, .acordeon-content{
+    padding: 14px 30px;
+}
+
+/*Posición de iconos*/
+.icon-acordeon{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/*Estilo para titulo de acordeones*/
+.acordeon-label{
+    display: block;
+    font-family: tommy;
+    color: #1f3e72;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+
+/*Efecto al seleccionar cada tarjeta*/
+.acordeon-label:hover{
+    color: #2b4bc9;
+}
+
+/*Estilos del contenido de cada acordeón*/
+.acordeon-content{
+    line-height: 1.6;
+    font-size: 0.9em;
+    color:#7a879d;
+    font-family: opensans;
+    font-style: bold;
+    display: none;
+    line-height: 15px;
+}
+
+/*Comportamiento del acordeón*/
+.acordeon-input{
+    display: none;
+}
+
+.acordeon-input:checked ~ .acordeon-content{
+    display: block;
+}
+
+/*Contenedor sección 4*/
+.informacion-seccion4{
+    position: relative;
+    margin-right: 50%;
+    padding-top: 10%;
+    float:left;
+}
+
+/*Estilo para titulo seción 4*/
+.informacion-seccion4 h1{
+    font-family: tommy;
+    font-size: 40px;
+    color: #1f3e72;
+    margin-left: 130px;
+}
+
+/*Tamaño y fondo del aside*/
+.foto-seccion4{
+    float: right;
+    height: 480px;
+    width: 45%;
+    margin-top: 10%;
+    background: linear-gradient(to right, #0c94e5, #2d6cdd);
+}
+
+/*Posición de foto sección 4*/
+.foto-seccion4 img{
+    margin-top: -170px;
+}
+
+/*Contenedor de las tarjetas de contacto*/
+.contacto{
+    float: left;
+    width: 55%;
+    height: 480px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+/*Tamaño y estilos de tarjetas de contacto*/
+.tarjetas-contacto1{
+    width: 30%;
+    height: 45%;
+    margin-left: 18%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(238, 243, 252, 1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.tarjetas-contacto2{
+    width: 30%;
+    height: 45%;
+    margin-right: 15%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(238, 243, 252, 1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.tarjetas-contacto3{
+    width: 30%;
+    height: 45%;
+    margin-left: 18%;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(238, 243, 252, 1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.tarjetas-contacto4{
+    width: 30%;
+    height: 45%;
+    margin-right: 15%;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(238, 243, 252, 1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*Arreglo de los items dentro de las tarjetas*/
+.tarjeta-1, .tarjeta-2, .tarjeta-3, .tarjeta-4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+/*Posiciones del icono de las tarjetas de contacto*/
+.contacto-icon{
+    width: 40%;
+    height: 50%;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.contacto-icon img{
+    margin-top: 70%;
+    margin-left: 30%;
+}
+
+/*Tamaño y posición de los titulos de las tarjetas*/
+.contacto-titulo{
+   width: 60%;
+   height: 50%;
+   display: block;
+   flex-grow: 0;
+   flex-shrink: 1;
+   flex-basis: auto;
+   align-self: auto;
+   order: 0;
+}
+
+/*Tamaño y posición del contenedor de los botones de cada tarjeta*/
+.contacto-button{
+    width: 100%;
+    height: 50%;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+/*Estilos de los botones*/
+.contacto-button button{
+    width: 80%;
+    height: 50%;
+    font-family: opensans;
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color:#2b4bc9;
+    background-color:#f1f5ff;
+    border-radius: 5%;
+    border: #f1f5ff;
+}
+
+/*Efectos de los botones*/
+.contacto-button button:hover{
+    color: white;
+    background-color: #2b4bc9;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*Estilos para titulos de las tarjetas*/
+#l1{
+    font-family: opensans;
+    font-size: 17px;
+    font-weight: bold;
+    color:#1f3e72;
+    margin-top: 43%;
+    margin-right: 10%;
+}
+
+/*Estilos para números de cada tarjeta*/
+#l2{
+    font-family: opensans;
+    font-size: 10px;
+    font-weight: bold;
+    color:#7a879d;
+}
+
+/*Sección vacía*/
+.seccion-final{
+    width: 100%;
+    height: 150px;
+    float: right;
+}
+
+/*Tamaño y arreglo de los items dentro del footer*/
+.foot{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 320px;
+    background-color: #eef3ff;
+}
+
+/*Tamaño de los contenedores dentro del footer*/
+.foot-title{
+    width: 40%;
+    height: 80%;
+}
+
+.foot-about{
+    width: 20%;
+    height: 80%;
+}
+
+.foot-company{
+    width: 20%;
+    height: 80%;
+}
+
+.foot-suport{
+    width: 20%;
+    height: 80%;
+}
+
+.copyrights{
+    width: 60%;
+    height: 20%;
+}
+
+.terminos{
+    width: 20%;
+    height: 20%;
+}
+
+.politica{
+    width: 20%;
+    height: 20%;
+}
+
+.foot-ttle{
+    font-family: tommy;
+    font-size: 25px;
+    color: #2b4bc9;
+    margin-left: 22%;
+    margin-top: 10%;
+}
+
+/*Estilos para cada sección dentro del footer*/
+.foot-detalles{
+    font-family: opensans;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 15px;
+    color:#7a879d;
+    margin-top: 2%;
+    margin-left: 22%;
+    margin-right: 35%;
+}
+
+.title-submenu{
+    font-family: tommy;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1f3e72;
+    margin-top: 22%;
+    margin-left: 25%;
+}
+
+.submenu{
+    font-family: opensans;
+    font-weight: bold;
+    font-size: 15px;
+    color:#7a879d;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+.derechos-reservados, .terminos-condiciones, .politica-privacidad{
+    font-family: opensans;
+    font-weight: bold;
+    font-size: 15px;
+    color:#7a879d;
+}
+
+.derechos-reservados{
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.terminos-condiciones, .politica-privacidad{
+    margin-top: 7%;
+}
